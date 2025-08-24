@@ -34,10 +34,10 @@ class Ui_MainWindow(object):
 
         self.gridLayout_2.addWidget(self.progressBar, 2, 0, 1, 1)
 
-        self.pushButton_3 = QPushButton(self.centralwidget)
-        self.pushButton_3.setObjectName(u"pushButton_3")
+        self.pushButton_runsqlbtn = QPushButton(self.centralwidget)
+        self.pushButton_runsqlbtn.setObjectName(u"pushButton_runsqlbtn")
 
-        self.gridLayout_2.addWidget(self.pushButton_3, 2, 1, 1, 1)
+        self.gridLayout_2.addWidget(self.pushButton_runsqlbtn, 2, 1, 1, 1)
 
         self.textEdit = QTextEdit(self.centralwidget)
         self.textEdit.setObjectName(u"textEdit")
@@ -46,25 +46,25 @@ class Ui_MainWindow(object):
 
         self.gridLayout = QGridLayout()
         self.gridLayout.setObjectName(u"gridLayout")
-        self.pushButton = QPushButton(self.centralwidget)
-        self.pushButton.setObjectName(u"pushButton")
+        self.pushButton_clearbtn = QPushButton(self.centralwidget)
+        self.pushButton_clearbtn.setObjectName(u"pushButton_clearbtn")
 
-        self.gridLayout.addWidget(self.pushButton, 0, 0, 1, 1, Qt.AlignmentFlag.AlignHCenter)
+        self.gridLayout.addWidget(self.pushButton_clearbtn, 0, 0, 1, 1, Qt.AlignmentFlag.AlignHCenter)
 
-        self.pushButton_2 = QPushButton(self.centralwidget)
-        self.pushButton_2.setObjectName(u"pushButton_2")
+        self.pushButton_uploadbtn = QPushButton(self.centralwidget)
+        self.pushButton_uploadbtn.setObjectName(u"pushButton_uploadbtn")
 
-        self.gridLayout.addWidget(self.pushButton_2, 1, 0, 1, 1, Qt.AlignmentFlag.AlignHCenter)
+        self.gridLayout.addWidget(self.pushButton_uploadbtn, 1, 0, 1, 1, Qt.AlignmentFlag.AlignHCenter)
 
         self.comboBox = QComboBox(self.centralwidget)
         self.comboBox.setObjectName(u"comboBox")
 
         self.gridLayout.addWidget(self.comboBox, 0, 1, 1, 1, Qt.AlignmentFlag.AlignHCenter)
 
-        self.pushButton_4 = QPushButton(self.centralwidget)
-        self.pushButton_4.setObjectName(u"pushButton_4")
+        self.pushButton_downloadbtn = QPushButton(self.centralwidget)
+        self.pushButton_downloadbtn.setObjectName(u"pushButton_downloadbtn")
 
-        self.gridLayout.addWidget(self.pushButton_4, 1, 1, 1, 1, Qt.AlignmentFlag.AlignHCenter)
+        self.gridLayout.addWidget(self.pushButton_downloadbtn, 1, 1, 1, 1, Qt.AlignmentFlag.AlignHCenter)
 
 
         self.gridLayout_2.addLayout(self.gridLayout, 0, 0, 1, 2)
@@ -85,9 +85,9 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
-        self.pushButton_3.setText(QCoreApplication.translate("MainWindow", u"Execute", None))
-        self.pushButton.setText(QCoreApplication.translate("MainWindow", u"Clear Table", None))
-        self.pushButton_2.setText(QCoreApplication.translate("MainWindow", u"Upload ID", None))
-        self.pushButton_4.setText(QCoreApplication.translate("MainWindow", u"Download", None))
+        self.pushButton_runsqlbtn.setText(QCoreApplication.translate("MainWindow", u"Execute", None))
+        self.pushButton_clearbtn.setText(QCoreApplication.translate("MainWindow", u"Clear Table", None))
+        self.pushButton_uploadbtn.setText(QCoreApplication.translate("MainWindow", u"Upload ID", None))
+        self.pushButton_downloadbtn.setText(QCoreApplication.translate("MainWindow", u"Download", None))
     # retranslateUi
 
