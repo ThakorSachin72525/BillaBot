@@ -7,5 +7,6 @@ requires-python = ">=3.13"
 dependencies = [
     "pyodbc>=5.2.0",
     "pyside6>=6.9.1",
+    "python-dotenv>=1.1.1",
     "sqlalchemy>=2.0.43",
 ]

@@ -1,5 +1,5 @@
 from PySide6.QtWidgets import QMainWindow
-from View.ui.main_window_ui import Ui_MainWindow  # import the generated UI class
+from View.ui.main_window_ui import Ui_MainWindow  
 from Controller.tool_controller import clear_table
 
 class MainWindow(QMainWindow, Ui_MainWindow):
