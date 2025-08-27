@@ -33,3 +33,4 @@ def fetch_one(sql, params=None):
     with engine.connect() as conn:
         result = conn.execute(text(sql), params or {})
         return result.fetchone()
+

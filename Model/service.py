@@ -14,3 +14,8 @@ def insert_salesorderid(order_id):
         "INSERT INTO ToolSalesOrderIDs (SalesOrderID) VALUES (:id)",
         {"id": order_id}
     )
+
+def get_initial_id_count():
+    """Get the count of IDs in the ToolSalesOrderIDs table"""
+    result = db.fetch_one("SELECT COUNT(SalesOrderID) AS count FROM ToolSalesOrderIDs")
+    return result[0]
